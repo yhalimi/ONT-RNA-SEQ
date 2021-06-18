@@ -6,7 +6,7 @@ Long-read genome sequencing is being used more and more in the past decade. With
 
 The produced workflow includes all steps needed to do the preprocessing of FASTQ files produced by Nanopore direct RNA sequencing for later downstream processing except for quality control of the raw and trimmed data. It allows users a choice of different tools with an option to change their settings manually or use the basic settings. This makes it easier for the general user to analyze Nanopore direct RNA-seq data. 
 
-For the future, it is planned to implement automated DESEq2 analysis in the workflow and the NanoTail and NanoMod modules from the original Masters of Pores workflow [7], as well as adding new ease of use options and converting the wrapper to a more convenient language like Nextflow. Further testing with the current and new datasets should also be performed to remove any kinks that are still present and to better test Graphmap2 and HTSeq-count. This all to make an easy to use RNA-seq analysis tool.
+For the future, it is planned to implement automated DESEq2 analysis in the workflow and the NanoTail and NanoMod modules from the original Masters of Pores workflow, as well as adding new ease of use options and converting the wrapper to a more convenient language like Nextflow. Further testing with the current and new datasets should also be performed to remove any kinks that are still present and to better test Graphmap2 and HTSeq-count. This all to make an easy to use RNA-seq analysis tool.
 
 ****
 
