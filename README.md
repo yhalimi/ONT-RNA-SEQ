@@ -12,27 +12,33 @@ For the future, it is planned to implement automated DESEq2 analysis in the work
 
 **Usage:**
  Bash mop_workflow.sh [-h] [-o <file>] [-i <file>] [-r <file>] [-a file]
-			[-m minimap2 | graphmap2] [-c nanocount | htseqcount] [-d yes | no] [-t yes | no] [-n yes | no]
-			[-z "N"] [-y "N"] [-x "N"] [-w "N"]
+	
+	[-m minimap2 | graphmap2] [-c nanocount | htseqcount] [-d yes | no] [-t yes | no] [-n yes | no]
+	
+	[-z "N"] [-y "N"] [-x "N"] [-w "N"]
 
  General options:
-  -h		show the help and exit.
-  -o		Specify directory name in which ouput is copied. (workflow will create the output directory)
+  
+	-h		show the help and exit.
+	-o		Specify directory name in which ouput is copied. (workflow will create the output directory)
 
  Input data:
-  -i		path to fastq.gz file.
-  -r		path to reference.gz file. 
-  -a		path to gff.gz file.
+	
+	-i		path to fastq.gz file.
+	-r		path to reference.gz file.
+	-a		path to gff.gz file.
 
  Tool and module selections:
-  -m		Specify mapping tool that will be used. (minimap2 or graphmap2)
-  -c		Specify counting tool. (nanocount or htseqcount)
-  -d		Specify if DESeq2 should be run. (yes or no)
-  -t		Specify if NanoTail should be run. (yes or no)
-  -n		Specify if NanoMod should be run. (yes or no)
+  
+	-m		Specify mapping tool that will be used. (minimap2 or graphmap2)
+	-c		Specify counting tool. (nanocount or htseqcount)
+	-d		Specify if DESeq2 should be run. (yes or no)
+	-t		Specify if NanoTail should be run. (yes or no)
+	-n		Specify if NanoMod should be run. (yes or no)
 
  Seperate tool options:
-  -z "N"		Specify specific tool options between " ", for NanoFilt filter tool. (for usage check tool's github at: https://github.com/wdecoster/nanofilt)
-  -y "N"		Specify specific tool options between " ", for selected mapping tool. (for usage check tool's github at: https://github.com/lh3/minimap2 or https://github.com/lbcb-sci/graphmap2)
-  -x "N"		Specify specific tool options between " ", for selected counting tool. (for usage check tool's github at: https://github.com/a-slide/NanoCount or https://github.com/htseq/htseq)
-  -w "N"		Specify specific tool options between " ", for NanoPlot plotting tool. (for usage check tool's github at: https://github.com/wdecoster/NanoPlot)
+  
+	-z "N"		Specify specific tool options between " ", for NanoFilt filter tool. (for usage check tool's github at: https://github.com/wdecoster/nanofilt)
+	-y "N"		Specify specific tool options between " ", for selected mapping tool. (for usage check tool's github at: https://github.com/lh3/minimap2 or https://github.com/lbcb-sci/graphmap2)
+	-x "N"		Specify specific tool options between " ", for selected counting tool. (for usage check tool's github at: https://github.com/a-slide/NanoCount or https://github.com/htseq/htseq)
+	-w "N"		Specify specific tool options between " ", for NanoPlot plotting tool. (for usage check tool's github at: https://github.com/wdecoster/NanoPlot)
